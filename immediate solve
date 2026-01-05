@@ -1,0 +1,12 @@
+// Create a Promise
+const myPromise = new Promise((resolve, reject) => {
+  // Asynchronous operation (e.g., network request or other async work)
+  setTimeout(() => {
+    const success = false; // set to true to simulate success
+    if (success) {
+      resolve("Operation succeeded");
+    } else {
+      reject(new Error("Start over"));
+    }
+  }, 1000); // 1000 ms = 1 second (use 10000 for 10 seconds)
+});
